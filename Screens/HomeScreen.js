@@ -1,11 +1,14 @@
 import React,{Component} from 'react';
-import {View,Text,StyleSheet} from 'react-native';
+import {View,Text,StyleSheet,Button} from 'react-native';
 
 class HomeScreen extends React.Component {
     render(){
         return(
             <View style={styles.screen}>
-                <Text>Welcome!</Text>
+                <Text>HOST-IT</Text>
+                <View style={styles.title}>
+                    <Button title='hostIT'></Button>
+                </View>
             </View>
         );
     }
@@ -14,7 +17,13 @@ class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
     screen: {
         flex: 1,
-        justifyContent: 'center',
+        alignItems: 'center',
+        alignContent: 'center',
+        marginTop: 10
+    },
+    title:{
+        flex: 1,
+        justifyContent:'center',
         alignItems: 'center'
     }
 });
